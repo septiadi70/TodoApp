@@ -55,6 +55,7 @@
 		270F9D522A6F986E005C4B51 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				27F5AAFA2A70A64B004F27D9 /* Models */,
 				270F9D532A6F986E005C4B51 /* TodoAppApp.swift */,
 				270F9D552A6F986E005C4B51 /* ContentView.swift */,
 				270F9D572A6F9870005C4B51 /* Assets.xcassets */,
@@ -71,6 +72,21 @@
 				270F9D5A2A6F9870005C4B51 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27F5AAFA2A70A64B004F27D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27F5AAFB2A70A656004F27D9 /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27F5AAFB2A70A656004F27D9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
