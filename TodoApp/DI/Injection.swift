@@ -16,4 +16,8 @@ final class Injection {
     private static func provideRepository() -> RepositoryProtocol {
         Repository(localDataSource: provideLocalDataSource())
     }
+    
+    private static func provideTaskUseCase() -> TaskUseCaseProtocol {
+        TaskUseCase(repository: provideRepository())
+    }
 }
