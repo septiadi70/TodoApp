@@ -13,6 +13,9 @@
 		270F9D5B2A6F9870005C4B51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270F9D5A2A6F9870005C4B51 /* Preview Assets.xcassets */; };
 		270F9D5D2A6F9870005C4B51 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F9D5C2A6F9870005C4B51 /* Persistence.swift */; };
 		270F9D602A6F9870005C4B51 /* TodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 270F9D5E2A6F9870005C4B51 /* TodoApp.xcdatamodeld */; };
+		27F5AB032A71092F004F27D9 /* LocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5AB022A71092F004F27D9 /* LocalDataSourceProtocol.swift */; };
+		27F5AB052A71FBBC004F27D9 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5AB042A71FBBC004F27D9 /* LocalDataSource.swift */; };
+		27F5AB082A71FE1F004F27D9 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5AB072A71FE1F004F27D9 /* Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		270F9D5A2A6F9870005C4B51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		270F9D5C2A6F9870005C4B51 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		270F9D5F2A6F9870005C4B51 /* TodoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoApp.xcdatamodel; sourceTree = "<group>"; };
+		27F5AB022A71092F004F27D9 /* LocalDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSourceProtocol.swift; sourceTree = "<group>"; };
+		27F5AB042A71FBBC004F27D9 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		27F5AB072A71FE1F004F27D9 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,8 @@
 		270F9D522A6F986E005C4B51 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				27F5AB062A71FDFB004F27D9 /* DI */,
+				27F5AB002A7108E1004F27D9 /* Data */,
 				27F5AAFA2A70A64B004F27D9 /* Models */,
 				270F9D532A6F986E005C4B51 /* TodoAppApp.swift */,
 				270F9D552A6F986E005C4B51 /* ContentView.swift */,
@@ -87,6 +95,31 @@
 			children = (
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		27F5AB002A7108E1004F27D9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				27F5AB012A710918004F27D9 /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		27F5AB012A710918004F27D9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				27F5AB022A71092F004F27D9 /* LocalDataSourceProtocol.swift */,
+				27F5AB042A71FBBC004F27D9 /* LocalDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		27F5AB062A71FDFB004F27D9 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				27F5AB072A71FE1F004F27D9 /* Injection.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F5AB082A71FE1F004F27D9 /* Injection.swift in Sources */,
+				27F5AB052A71FBBC004F27D9 /* LocalDataSource.swift in Sources */,
 				270F9D5D2A6F9870005C4B51 /* Persistence.swift in Sources */,
 				270F9D562A6F986E005C4B51 /* ContentView.swift in Sources */,
+				27F5AB032A71092F004F27D9 /* LocalDataSourceProtocol.swift in Sources */,
 				270F9D542A6F986E005C4B51 /* TodoAppApp.swift in Sources */,
 				270F9D602A6F9870005C4B51 /* TodoApp.xcdatamodeld in Sources */,
 			);
