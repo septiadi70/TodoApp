@@ -16,6 +16,8 @@
 		27F5AB032A71092F004F27D9 /* LocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5AB022A71092F004F27D9 /* LocalDataSourceProtocol.swift */; };
 		27F5AB052A71FBBC004F27D9 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5AB042A71FBBC004F27D9 /* LocalDataSource.swift */; };
 		27F5AB082A71FE1F004F27D9 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5AB072A71FE1F004F27D9 /* Injection.swift */; };
+		27F5AB0B2A720138004F27D9 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5AB0A2A720138004F27D9 /* RepositoryProtocol.swift */; };
+		27F5AB0D2A720168004F27D9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5AB0C2A720168004F27D9 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		27F5AB022A71092F004F27D9 /* LocalDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSourceProtocol.swift; sourceTree = "<group>"; };
 		27F5AB042A71FBBC004F27D9 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
 		27F5AB072A71FE1F004F27D9 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		27F5AB0A2A720138004F27D9 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		27F5AB0C2A720168004F27D9 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		27F5AB002A7108E1004F27D9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				27F5AB092A7200D5004F27D9 /* Repository */,
 				27F5AB012A710918004F27D9 /* DataSource */,
 			);
 			path = Data;
@@ -120,6 +125,15 @@
 				27F5AB072A71FE1F004F27D9 /* Injection.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		27F5AB092A7200D5004F27D9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				27F5AB0A2A720138004F27D9 /* RepositoryProtocol.swift */,
+				27F5AB0C2A720168004F27D9 /* Repository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +211,10 @@
 				270F9D5D2A6F9870005C4B51 /* Persistence.swift in Sources */,
 				270F9D562A6F986E005C4B51 /* ContentView.swift in Sources */,
 				27F5AB032A71092F004F27D9 /* LocalDataSourceProtocol.swift in Sources */,
+				27F5AB0B2A720138004F27D9 /* RepositoryProtocol.swift in Sources */,
 				270F9D542A6F986E005C4B51 /* TodoAppApp.swift in Sources */,
 				270F9D602A6F9870005C4B51 /* TodoApp.xcdatamodeld in Sources */,
+				27F5AB0D2A720168004F27D9 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

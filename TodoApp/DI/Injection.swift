@@ -12,4 +12,8 @@ final class Injection {
         let persistenceController = PersistenceController()
         return LocalDataSource(persistenceController: persistenceController)
     }
+    
+    private static func provideRepository() -> RepositoryProtocol {
+        Repository(localDataSource: provideLocalDataSource())
+    }
 }
